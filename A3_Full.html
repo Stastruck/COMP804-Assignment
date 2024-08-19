@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMP804 Assignment</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: darkred;
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+
+        /* Task 1 Styles */
+        #task1 h1 {
+            color: darkblue;
+            border-bottom: 2px solid black;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        #task1 h2 {
+            color: green;
+            border: 2px dotted red;
+            padding: 8px;
+            background-color: lightyellow;
+        }
+
+        #task1 h3 {
+            color: purple;
+            border: 2px dashed blue;
+            padding: 6px;
+            background-color: lightcyan;
+        }
+
+        /* Task 2 Styles */
+        #task2 table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #task2 th, #task2 td {
+            border: 2px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #task2 th {
+            background-color: #f2f2f2;
+            font-size: 18px;
+        }
+
+        #task2 tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        #task2 tr:nth-child(odd) {
+            background-color: #e6f7ff;
+        }
+
+        #task2 td {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            color: #333;
+        }
+
+        #task2 a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        #task2 a:hover {
+            text-decoration: underline;
+        }
+
+        /* Task 3 Styles */
+        #task3 table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #task3 th, #task3 td {
+            border: 2px solid #000;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #task3 th {
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        #task3 td {
+            background-color: #f9f9f9;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+        }
+
+        #task3 img {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        #task3 a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        #task3 a:hover {
+            text-decoration: underline;
+        }
+
+        /* Task 4 Styles */
+        .button-container {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .highlight {
+            background-color: yellow;
+            border: 2px solid red;
+        }
+
+        #text-field {
+            margin-top: 20px;
+            font-size: 18px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        #message-container {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #message-container img {
+            display: block;
+            margin-top: 10px;
+            width: 200px;
+            height: auto;
+        }
+
+        .reference {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .reference a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .reference a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 1 -->
+    <section id="task1">
+        <h2>Task 1: CSS Styling for Headings</h2>
+        <h1>Student Number: 8831464 | Full Name: Oliver Cox</h1>
+        <h2>Subject Code: COMP804 | Subject Title: Web Development</h2>
+        <h3>Assignment Number: 1 | Due Date: 19 Aug 2024</h3>
+    </section>
+
+    <!-- Task 2 -->
+    <section id="task2">
+        <h2>Task 2: Styled Table with CSS</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td>August 19, 2024</td>
+                <td><a href="https://www.uow.edu.au/student/dates/#d.en.186577">Assignment 1 Due Date</a></td>
+            </tr>
+            <tr>
+                <td>September 1, 2024</td>
+                <td><a href="https://www.uow.edu.au/student/dates/#d.en.186577">Start of Semester 2</a></td>
+            </tr>
+            <tr>
+                <td>October 15, 2024</td>
+                <td><a href="https://www.uow.edu.au/student/dates/#d.en.186577">Census Date for Semester 2</a></td>
+            </tr>
+            <tr>
+                <td>November 30, 2024</td>
+                <td><a href="https://www.uow.edu.au/student/dates/#d.en.186577">End of Semester 2 Exams</a></td>
+            </tr>
+            <tr>
+                <td>December 15, 2024</td>
+                <td><a href="https://www.uow.edu.au/student/dates/#d.en.186577">Release of Final Grades</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Task 3 -->
+    <section id="task3">
+        <h2>Task 3: Web Attacks Information Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Web Attack Overview</th>
+            </tr>
+            <tr>
+                <td>XSS (Cross-Site Scripting)
+                    <img src="xss.png" alt="XSS Attack">
+                </td>
+                <td>XSS allows attackers to inject malicious scripts into web pages viewed by other users. 
+                    These scripts can steal user data, such as cookies or session tokens. 
+                    It is one of the most common vulnerabilities found in web applications.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/xss/">Learn more about XSS</a>
+                </td>
+            </tr>
+            <tr>
+                <td>SQL Injection
+                    <img src="sql.png" alt="SQL Injection Attack">
+                </td>
+                <td>SQL Injection occurs when an attacker manipulates a SQL query through user input, 
+                    allowing them to access or modify database information. 
+                    This can lead to unauthorized data exposure and loss of data integrity.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/SQL_Injection">Learn more about SQL Injection</a>
+                </td>
+            </tr>
+            <tr>
+                <td>CSRF (Cross-Site Request Forgery)
+                    <img src="CSRF.png" alt="CSRF Attack">
+                </td>
+                <td>CSRF tricks a victim into submitting a malicious request. 
+                    It can lead to unauthorized actions being performed on behalf of the user without their knowledge.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/csrf">Learn more about CSRF</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Clickjacking
+                    <img src="click.png" alt="Clickjacking Attack">
+                </td>
+                <td>Clickjacking is an attack where a user is tricked into clicking on something different from what they perceive, 
+                    potentially revealing confidential information or taking control of their computer.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/Clickjacking">Learn more about Clickjacking</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Man-in-the-Middle (MITM)
+                    <img src="man.png" alt="MITM Attack">
+                </td>
+                <td>MITM is an attack where the attacker secretly intercepts and possibly alters the communication between two parties. 
+                    This can result in the theft of sensitive information.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/Man-in-the-middle_attack">Learn more about MITM</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Denial of Service (DoS)
+                    <img src="ddos.png" alt="DoS Attack">
+                </td>
+                <td>DoS attacks aim to make a service unavailable by overwhelming it with a flood of requests. 
+                    This can crash servers and disrupt normal operations.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/Denial_of_Service">Learn more about DoS</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Brute Force Attack
+                    <img src="brute.png" alt="Brute Force Attack">
+                </td>
+                <td>A Brute Force Attack involves attempting many passwords or passphrases with the hope of eventually guessing correctly. 
+                    It is one of the simplest and most common forms of attacks.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/Brute_force_attack">Learn more about Brute Force Attacks</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Directory Traversal
+                    <img src="directal.png" alt="Directory Traversal Attack">
+                </td>
+                <td>Directory Traversal is a type of attack that allows attackers to access directories and files stored outside the web root folder. 
+                    This can expose critical system files and data.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/Path_Traversal">Learn more about Directory Traversal</a>
+                </td>
+            </tr>
+            <tr>
+                <td>RFI (Remote File Inclusion)
+                    <img src="rfi.png" alt="RFI Attack">
+                </td>
+                <td>RFI allows attackers to include a remote file, usually through a script on the web server. 
+                    This can lead to remote code execution or data theft.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/Remote_File_Inclusion">Learn more about RFI</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Session Hijacking
+                    <img src="session.png" alt="Session Hijacking Attack">
+                </td>
+                <td>Session Hijacking is an attack where an attacker takes over a valid session between a user and a web server. 
+                    This allows the attacker to impersonate the user and perform actions on their behalf.
+                    <br>
+                    <a href="https://owasp.org/www-community/attacks/Session_hijacking_attack">Learn more about Session Hijacking</a>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Task 4 -->
+    <section id="task4">
+        <h2>Task 4: JavaScript with Buttons</h2>
+
+        <div class="button-container">
+            <button id="catButton">Cat</button>
+            <button id="dogButton">Dog</button>
+            <button id="frogButton">Frog</button>
+        </div>
+
+        <input type="text" id="text-field" readonly>
+
+        <div id="message-container"></div>
+
+        <script>
+            const catButton = document.getElementById('catButton');
+            const dogButton = document.getElementById('dogButton');
+            const frogButton = document.getElementById('frogButton');
+            const textField = document.getElementById('text-field');
+            const messageContainer = document.getElementById('message-container');
+
+            // Function to reset the button styles and clear the message container
+            function resetButtons() {
+                catButton.classList.remove('highlight');
+                dogButton.classList.remove('highlight');
+                frogButton.classList.remove('highlight');
+                messageContainer.innerHTML = '';
+            }
+
+            // Event listeners for each button
+            catButton.addEventListener('click', () => {
+                resetButtons();
+                catButton.classList.add('highlight');
+                textField.value = 'User clicks Cat';
+                messageContainer.innerHTML = `
+                    <p>Cat is clicked</p>
+                    <img src="cat.png" alt="Cat">
+                    <div class="reference">
+                        Image Source: <a href="https://www.alleycat.org/resources/the-natural-history-of-the-cat/" target="_blank">The Natural History of the Cat</a>
+                    </div>
+                `;
+            });
+
+            dogButton.addEventListener('click', () => {
+                resetButtons();
+                dogButton.classList.add('highlight');
+                textField.value = 'User clicks Dog';
+                messageContainer.innerHTML = `
+                    <p>Dog is clicked</p>
+                    <img src="dog.png" alt="Dog">
+                    <div class="reference">
+                        Image Source: <a href="https://www.hartz.com/five-things-all-small-dog-owners/" target="_blank">Five Things All Small Dog Owners Should Know</a>
+                    </div>
+                `;
+            });
+
+            frogButton.addEventListener('click', () => {
+                resetButtons();
+                frogButton.classList.add('highlight');
+                textField.value = 'User clicks Frog';
+                messageContainer.innerHTML = `
+                    <p>Frog is clicked</p>
+                    <img src="frog.png" alt="Frog">
+                    <div class="reference">
+                        Image Source: <a href="https://www.livescience.com/50692-frog-facts.html" target="_blank">Frog Facts</a>
+                    </div>
+                `;
+            });
+        </script>
+    </section>
+
+    <!-- Task 5 -->
+    <section id="task5">
+        <h2>Task 5: GitHub Repository and Report</h2>
+        <p>You can view the report with screenshots of the Git commands used for uploading this website to GitHub by clicking the link below:</p>
+        <p><a href="https://github.com/YourUsername/COMP804-Assignment/raw/main/Git_Report.pdf" target="_blank">View Git Report</a></p>
+    </section>
+
+</body>
+</html>
